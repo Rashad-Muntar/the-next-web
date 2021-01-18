@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav a{
+     text-decoration: none;
+     color: #555;
+     font-family:  Maquette,Helvetica Neue,Arial,sans-serif;
+
+}
+
+.top-nav{
+    width: 100%;
+    display: inline-flex;
+    background-color: #131313;
+    
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+        
+}
+
+
+
+.topNav-left{
+    display: flex;
+    align-self: flex-end;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    margin-left: 20px;
+}
+
+.topNav-right{
+    display: flex;
+    align-self: flex-end;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    width: 15%;
+    margin-right: 20px;
+}
+
+.main-nav{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    height: 48px;
+}
+
+.main-nav a{
+    color: #aaa;
+}
+
+.nav-logo{
+    width: auto;
+    height: 100%;
+    
+}
+
+.mainNav-left{
+    align-items: center;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainNav-right{
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    align-items: center;
+    margin-right: 20px;
+    height: 100%;
+    width: auto;
+}
+
+.mainNav-right i{
+    font-size: 1.5em;
+    color: #aaa;
+}
+
+.cover-story{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0,0,0,.25);
+}
+
+.cover-story .big-img{
+    float: left;
+    height: 60vh;
+    width: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+
+}
+
+.cover-story .imgs{
+    float: right;
+    margin-left: 0;
+    width: 39%;
+    height: 28.8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.imgs:first-child{
+    margin-bottom: 20px;
+}
+.cover-items{
+    margin: 5px;
+
+}
+
+.overlay{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0,0,0,.25);
+    z-index: 1;
+
+}
