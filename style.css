@@ -3,7 +3,19 @@ body {
   padding: 0;
 }
 
-nav a {
+.top-nav{
+  display: flex;
+}
+
+.top-nav a{
+  color: #555;
+}
+
+.main-nav{
+  display: flex;
+}
+
+/* nav a {
   text-decoration: none;
   color: #555;
   font-family: Maquette, Helvetica Neue, Arial, sans-serif;
@@ -27,7 +39,7 @@ nav a {
   width: 30%;
   margin-left: 20px;
 }
-
+ .header-img 
 .topNav-right {
   display: flex;
   align-self: flex-end;
@@ -75,81 +87,153 @@ nav a {
 .mainNav-right i {
   font-size: 1.5em;
   color: #aaa;
-}
+} */
 
 main {
   margin: auto;
   width: 100%;
 }
 
-.cover-story {
-  width: 99%;
+.header-img{
+  width: 99vw;
   margin: 0 auto;
-  margin-bottom: 20px;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  height: 600px;
-  grid-gap: 8px;
-  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  height: 50vw;
 }
 
-.cover-articles {
+.header-img .main-header-img{
+  width: 60%;
   height: 100%;
-  background-position: 50%;
-  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  z-index: -1;
-  display: grid;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  display: flex;
   flex-direction: column;
-  grid-template-rows: 1fr;
+  justify-content: space-between;
   position: relative;
-  font-family:Maquette, Helvetica Neue, Arial, sans-serif;
-  color: white; 
 }
 
-.cover-title{
-    font-size: 2em;
+.header-img .sub-header-img{
+  width: 39%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  
 }
 
-.byline{
-    display: grid;
-    color: #9A9291;
-    grid-template-columns: repeat(6, 1fr);
+.header-img .sub-header-img > div{
+width: 100%;
+height: 49%;
+background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  position: relative;
 }
 
-.cover-logo{
-    z-index: 2;
-    color: #ffffff;
-    background: transparent url(assets/images/logo\ white.svg) no-repeat;
-    height: 100px;
-    margin: 20px;
+
+.logo-date{
+  display: flex;
+  width: 100%;
+  height: 30%;
+  justify-content: space-between;
+}
+
+
+.logo-date .cover-logo{
+  height: 100px;
+  width: 50%;
+  z-index: 2;
+}
+
+.logo-date .article-date{
+  color: white;
+  padding: 15px 15px;
+  z-index: 2;
 }
 
 .cover-text{
-    z-index: 2;  
-    margin: 30px;     
+ padding-top: 100px;
+ height: 40%;
+z-index: 2;
 }
 
-.overlay{
-    z-index: 1;
-    mix-blend-mode: hard-light;
-    background-image: linear-gradient(#ffffff00, black);
-    width: 100%;
-    height: 100%;
-    position: absolute;
+.cover-text h3{
+  color: white;
+  font-size: 2.4em;
+  font-weight: 800;
+  width: 70%;
+  margin: 0;
+  padding: 0;
+  padding: 0 10px;
+  z-index: 2;
+}
+
+.sub-img-text{
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 2;
+  padding: 10px 15px;
+}
+
+.sub-img-text h3{
+color: white;
+font-weight: 700;
+font-size: 1.5em;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+}
+
+.sub-img-text > div{
+  z-index: 10;
+}
+
+.sub-img-text small{
+  z-index: 10;
+  padding-right: 10px;
+}
+
+.sub-img-text time{
+  z-index: 10;
+  color: white;
+}
+
+.sub-img-text > div small{
+  color: white;
 
 }
 
-.cover-story article:first-child .overlay {
-    position: absolute;
-    mix-blend-mode: hard-light;
-    background-image: linear-gradient(165deg, #ff420aff, #000000);
-    height: 100%;
-    width: 100%;
+.cover-text .byline small{
+  color: white;
+  padding: 10px;
 }
 
-.cover-story article:first-child h3{
-    font-size: 3em;
+
+
+.header-img .img-overlay{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0.6;
+  z-index: 1;
+  background: rgba(255,211,209,0.74);
+background: -moz-linear-gradient(-45deg, rgba(255,211,209,0.74) 0%, rgba(240,12,0,0.86) 51%, rgba(0,0,0,0.98) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,211,209,0.74)), color-stop(51%, rgba(240,12,0,0.86)), color-stop(100%, rgba(0,0,0,0.98)));
+background: -webkit-linear-gradient(-45deg, rgba(255,211,209,0.74) 0%, rgba(240,12,0,0.86) 51%, rgba(0,0,0,0.98) 100%);
+background: -o-linear-gradient(-45deg, rgba(255,211,209,0.74) 0%, rgba(240,12,0,0.86) 51%, rgba(0,0,0,0.98) 100%);
+background: -ms-linear-gradient(-45deg, rgba(255,211,209,0.74) 0%, rgba(240,12,0,0.86) 51%, rgba(0,0,0,0.98) 100%);
+background: linear-gradient(135deg, rgba(255,211,209,0.74) 0%, rgba(240,12,0,0.86) 51%, rgba(0,0,0,0.98) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd3d1', endColorstr='#000000', GradientType=1 );
+
 }
 
 .wrapper {
@@ -164,7 +248,7 @@ main {
   font-family: inherit;
   color: rgba(248, 80, 50, 1);
   font-size: 2.5em;
-}
+} 
 
 .lastest-news {
   display: grid;
@@ -250,6 +334,7 @@ main {
   color: #7a7a7a;
   font-family: Maquette, Helvetica Neue, Arial, sans-serif;
   text-decoration: none;
+  padding-left: 15px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -259,7 +344,7 @@ main {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .cover-story {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -269,6 +354,15 @@ main {
     grid-column: 1/3;
     grid-row: 1/3;
   }
+
+    .header-img{
+      display: flex;
+    }
+
+    .header-img .main-header-img{
+      width: 60%;
+}
+
 }
 
 @media only screen and (max-width: 460px){
@@ -297,6 +391,72 @@ main {
         width: 80%;
         text-align: center;
     }
+
+    .header-img{
+      flex-direction: column;
+    }
+
+.header-img .main-header-img{
+  width: 100%;
+  height: 150px;
+  background-color: teal;
+}
+
+.header-img .sub-header-img{
+  width: 100%;
+  height: 62%;
+}
+
+
+.header-img .sub-header-img > div{
+background-color: goldenrod;
+height: 48%;
+}
+
+.cover-text h3{
+  font-size: 1.3em;
+  width: 80%;
+}
+
+.logo-date .cover-logo{
+  display: none;
+  height: 0;
+}
+
+.logo-date{
+  height: 80%;
+  display: none;
+  
+}
+
+.main-header-img{
+  margin-bottom: 13px;
+}
+
+.cover-text{
+ height: 100%;
+ padding-top: 50px;
+ 
+}
+
+.header-img .sub-header-img{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.sub-img-text h3{
+font-size: 1.2em;
+}
+
+.sub-img-text{
+  margin-top: 10%;
+}
+
 }
 
 
