@@ -23,7 +23,7 @@ This replica of the Next Website has different breakpoint for the different size
 👤 **Rashad Muntar**
 
 - GitHub: [@Rashad-Muntar](https://github.com/Rashad-Muntar)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- Twitter: [@Rashad-Toure](https://twitter.com/twitterhandle)
 
 👤 **Juan Carlos Campos**
 
