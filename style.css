@@ -284,8 +284,8 @@ nav a {
 
 .lastest-elements {
   width: 24%;
+
   color: black;
-  margin-bottom: 20px;
 }
 
 .lastest-elements img {
@@ -439,6 +439,10 @@ nav a {
   margin: 0 auto;
 }
 
+.blogs-wrapper > div {
+  width: 32%;
+}
+
 .blogs-wrapper .top-big-link {
   text-decoration: none;
   color: #f42;
@@ -563,6 +567,18 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.latest-section-wrapper > div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.latest-section-wrapper > div > div {
+  width: 24%;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -960,17 +976,6 @@ nav a {
     height: 62%;
   }
 
-  .blogs-wrapper > div {
-    width: 32%;
-  }
-
- .latest-section-wrapper > div {
-   width: 100%;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
- }
-
   .header-img .sub-header-img > div {
     background-color: goldenrod;
     height: 48%;
@@ -1078,5 +1083,4 @@ nav a {
     margin-top: 5px;
     font-size: 0.7em;
   }
-
 }
