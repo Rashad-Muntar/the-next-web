@@ -9,7 +9,6 @@ body {
 }
 
 /* from Carlos */
-
 .mobile-nav {
   display: none;
 }
@@ -477,6 +476,11 @@ footer .footer-socials .links a {
   font-size: 0.75em;
 }
 
+.footer-legal-wrapper small span {
+  color: white;
+  font-weight: 700;
+}
+
 .blogs-wrapper .blogs-card .inner-img p span {
   font-weight: 600;
   font-size: 0.8em;
@@ -770,11 +774,6 @@ footer .footer-socials .links {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer-legal-wrapper small span {
-  color: white;
-  font-weight: 700;
 }
 
 .footer-legal-wrapper .footer-legal {
