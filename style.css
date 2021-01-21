@@ -8,7 +8,6 @@ body {
   overflow-x: hidden;
 }
 
-/* from Carlos */
 .mobile-nav {
   display: none;
 }
@@ -943,6 +942,12 @@ footer .footer-socials .links {
   .header-img .main-header-img {
     width: 60%;
   }
+
+  .links {
+    width: 50%;
+    border: 1px solid white;
+    font-size: 0.6em;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1124,7 +1129,7 @@ footer .footer-socials .links {
   }
 
   footer .footer-socials .links {
-    width: 80%;
+    width: 60%;
   }
 
   footer .footer-socials .links a {
