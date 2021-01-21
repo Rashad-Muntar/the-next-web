@@ -42,7 +42,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Micoverse team
+- [Micoverse team](https://microverse.pathwright.com/library/new-technical-curriculum/177956/path/step/104246979/)
 
 ## 📝 License
 
